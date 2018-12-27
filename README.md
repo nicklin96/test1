@@ -5,15 +5,20 @@ GAnswer系统是由北京大学计算机技术研究所数据管理实验室邹�
 **帮助文档请点击此处 [中文(ZH)](docs/gAnswer_help.pdf)**
 
 ## 快速开始
-首先您需要从[此处](https://pan.baidu.com/s/1LHGO0cU5et5o5nQWc3UvVg)下载系统必需的数据文件data.rar，提取码为1mcr
+首先您需要从[此处](https://pan.baidu.com/s/1LHGO0cU5et5o5nQWc3UvVg)下载系统必需的数据文件dbpedia16.rar，提取码为1mcr，您需要将其解压到data文件夹下。
 
 ### 使用jar包部署
 我们推荐您使用我们提供的打包好的jar文件部署gAnswer，具体步骤为：
 
 - 下载Ganswer.jar与data.rar两个文件，我们推荐您从github的release页面下载最新版的Ganswer.jar，以保证稳定性。
-- 在控制台下解压Ganswer.jar，您可以解压到任意文件路径下，但请保证Ganswer.jar文件与解压得到的文件处在统一路径下。
-- 在控制台下解压data.rar，这时，您需要把解压得到的文件夹置于Ganswer.jar文件所在的路径下。
-- 在控制台下输入java -jar Ganswer.jar，运行jar包，等待系统初始化结束，出现Server Ready！字样后，则说明初始化成功，您可以开始通过Http请求访问gAnswer的服务了。
+- 在控制台下解压Ganswer.jar
+'jar -xvf Ganswer.jar'
+- 您可以解压到任意文件路径下，但请保证Ganswer.jar文件与解压得到的文件处在统一路径下。
+- 在控制台下解压dbpedia16.rar，注意，这时，您需要把解压得到的文件置于Ganswer.jar文件所在的路径的data文件夹下。
+'unrar dbpedia16.rar'
+- 在控制台下运行jar包。
+'java -jar Ganswer.jar'
+- 等待系统初始化结束，出现Server Ready！字样后，则说明初始化成功，您可以开始通过Http请求访问gAnswer的服务了。
 
 这部分信息可以在帮助文档的‘“2.1.1 开始使用”’一章找到。
 
