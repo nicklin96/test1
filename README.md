@@ -15,7 +15,7 @@ GAnswer系统是由北京大学计算机技术研究所数据管理实验室邹�
 ```java
 jar -xvf Ganswer.jar
 ```
-- 您可以解压到任意文件路径下，但请保证Ganswer.jar文件与解压得到的文件处在统一路径下。
+- 您应该解压到主工程目录下，请保证Ganswer.jar文件与解压得到的文件处在统一路径下。
 - 在控制台下解压dbpedia16.rar，注意，这时，您需要把解压得到的文件置于Ganswer.jar文件所在的路径的data文件夹下。
 ```java
 unrar dbpedia16.rar
